@@ -15,6 +15,11 @@ body {
     
 	font-size: 20px;
 	text-align: center;
+	background: url('https://res.cloudinary.com/crxssed/image/upload/v1612717025/header-dark.png');
+	background-repeat: no-repeat;
+  	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
 }
 
 a {
