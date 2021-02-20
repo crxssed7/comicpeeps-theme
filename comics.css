@@ -78,17 +78,17 @@ a {
 }
 
 .rootlink:nth-of-type(odd) {
-    font-family: "Oswald";
+    font-family: "Courier New";
     font-size: 30px;  
     display : inline-block;
     padding: 5px;    
-    background-color: #ee7f08;
-   	border: #080808 solid 4px;
-    color: #1a1a1a;
+    background-color: transparent;
+   	border: #e6e6e6 solid 4px;
+    color: #e6e6e6;
     width: 150px;	
     /* box-shadow: -6px 10px 11px 3px rgba(0, 0, 0, 0.75); */
     font-weight: bold;
-    transform: skewY(-10deg);
+    /* transform: skewY(-10deg); */
 	box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	-webkit-box-sizing:border-box;
@@ -116,7 +116,7 @@ a {
     left: -22px;
     border-style: solid;
     border-width: 6px 18px 8px 0;
-    border-color: transparent #080808;
+    border-color: transparent #e6e6e6;
     display: block;
     width: 0;
     z-index: 0;
@@ -124,8 +124,8 @@ a {
 
 .rootlink:nth-of-type(odd):hover{
 
-	transform: skewY(-10deg);
-	    background-color: #ff8503;
+	/* transform: skewY(-10deg); */
+	    background-color: transparent;
 
 }
 
@@ -137,8 +137,8 @@ a {
 
 .rootlink:nth-of-type(odd):active{
 
-	transform: translate(0,0.03em) skewY(-10deg);
-		    background-color: #e47907;
+	/* transform: translate(0,0.03em) skewY(-10deg); */
+		    background-color: transparent;
 
 }
 
@@ -149,17 +149,17 @@ a {
 }
 
 .rootlink {
-    font-family: "Oswald";
+    font-family: "Courier New";
     font-size: 30px;  
     display : inline-block;
     padding: 5px;    
     background-color: #f1f1f1;
-   	border: #080808 solid 4px;
-    color: #1a1a1a;
+   	border: #e6e6e6 solid 4px;
+    color: #e6e6e6;
     width: 150px;	
-    box-shadow: -5px 4px 11px 2px rgba(0, 0, 0, 0.75);
+    /* box-shadow: -5px 4px 11px 2px rgba(0, 0, 0, 0.75); */
     font-weight: bold;
-    transform: skewY(-10deg);
+    /* transform: skewY(-10deg); */
 	box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	-webkit-box-sizing:border-box;
@@ -199,7 +199,7 @@ a {
 
 .rootlink:hover{
 
-	transform: skewY(-10deg);
+	/* transform: skewY(-10deg); */
 	    background-color: #FFF;
 
 }
@@ -212,7 +212,7 @@ a {
 
 .rootlink:active{
 
-	transform: translate(0,0.03em) skewY(-10deg);
+	/* transform: translate(0,0.03em) skewY(-10deg); */
 		    background-color: #e2e2e2;
 
 }
