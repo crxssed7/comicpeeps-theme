@@ -15,7 +15,11 @@ body {
     color: #eee;
     text-align: center;
         font-family:open_sansregular;
-
+	background: url('comic-bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;	
 } 
 
 a {
