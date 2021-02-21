@@ -254,4 +254,7 @@ input {
             animation: fadein 0.5s;
 }
 
-
+::selection {
+	color: #020202;
+	background-color: #e6e6e6;
+}
