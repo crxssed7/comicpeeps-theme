@@ -43,6 +43,11 @@ body {
     background-color: #020202;
     color: #FFFFFF;
     text-align: center;
+	background: url('book-bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
 }  
 
 a {
@@ -78,17 +83,17 @@ a img:hover {
 }
 
 .rootlink:nth-of-type(odd) {
-    font-family: "Oswald";
+    font-family: "Courier New";
     font-size: 30px;  
     display : inline-block;
     padding: 5px;    
-    background-color: #00bfbf;
-   	border: #080808 solid 4px;
-    color: #1a1a1a;
+    background-color: transparent;
+   	border: #e6e6e6 solid 4px;
+    color: #e6e6e6;
     width: 150px;	
     /* box-shadow: -6px 10px 11px 3px rgba(0, 0, 0, 0.75); */
     font-weight: bold;
-    transform: skewY(-10deg);
+    /* transform: skewY(-10deg); */
 	box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	-webkit-box-sizing:border-box;
@@ -102,7 +107,7 @@ a img:hover {
     left: -14px;
     border-style: solid;
     border-width: 3px 15px 5px 0;
-    border-color: transparent #00bfbf;
+    border-color: transparent #e6e6e6;
     display: block;
     width: 0;
     z-index: 1;
@@ -116,7 +121,7 @@ a img:hover {
     left: -22px;
     border-style: solid;
     border-width: 6px 18px 8px 0;
-    border-color: transparent #080808;
+    border-color: transparent #e6e6e6;
     display: block;
     width: 0;
     z-index: 0;
@@ -124,32 +129,32 @@ a img:hover {
 
 .rootlink:nth-of-type(odd):hover{
 
-	transform: skewY(-10deg);
-	    background-color: #07d0d2;
+	/* transform: skewY(-10deg); */
+	    background-color: transparent;
 
 }
 
 .rootlink:nth-of-type(odd):hover::after{
 
-    border-color: transparent #07d0d2;
+    border-color: transparent #e6e6e6;
 
 }
 
 .rootlink:nth-of-type(odd):active{
 
-	transform: translate(0,0.03em) skewY(-10deg);
-		    background-color: #00a9ab;
+	/* transform: translate(0,0.03em) skewY(-10deg); */
+		    background-color: transparent;
 
 }
 
 .rootlink:nth-of-type(odd):active::after{
 
-    border-color: transparent #00a9ab;
+    border-color: transparent #e6e6e6;
 
 }
 
 .rootlink {
-    font-family: "Oswald";
+    font-family: "Courier New";
     font-size: 30px;  
     display : inline-block;
     padding: 5px;    
@@ -159,7 +164,7 @@ a img:hover {
     width: 150px;	
     box-shadow: -5px 4px 11px 2px rgba(0, 0, 0, 0.75);
     font-weight: bold;
-    transform: skewY(-10deg);
+    /* transform: skewY(-10deg); */
 	box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	-webkit-box-sizing:border-box;
@@ -199,7 +204,7 @@ a img:hover {
 
 .rootlink:hover{
 
-	transform: skewY(-10deg);
+	/* transform: skewY(-10deg); */
 	    background-color: #FFF;
 
 }
@@ -212,7 +217,7 @@ a img:hover {
 
 .rootlink:active{
 
-	transform: translate(0,0.03em) skewY(-10deg);
+	/* transform: translate(0,0.03em) skewY(-10deg); */
 		    background-color: #e2e2e2;
 
 }
@@ -433,10 +438,31 @@ a img:hover {
 	text-align: center;
 }
 
+.cell .thumb a img {
+	border: 0px solid #AAAAAA;
+	border-radius: 10px;
+    /*box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9), 0px 0px 5px rgba(0, 0, 0, 0.9) inset;*/
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1s; /* Firefox < 16 */
+        -ms-animation: fadein 1s; /* Internet Explorer */
+         -o-animation: fadein 1s; /* Opera < 12.1 */
+            animation: fadein 1s;
+
+}
+
+.cell .thumb a img:hover {
+    border: 3px solid #e6e6e6;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9), 0px 0px 5px rgba(0, 0, 0, 0.9) inset;
+    margin:-3px;
+   	-webkit-transition: all 0.1s ease-out;
+	-moz-transition: all 0.1s ease-out;
+	-o-transition: all 0.1s ease-out;
+} 
+
 .label {
 font-size: 14px;
-font-family: open_sansregular;    
-height: 105px;
+font-family: "Courier New";    
+height: 45px;
 overflow: hidden;
 margin: 8px 4px 0px;
     -webkit-animation: fadein 0.1s; /* Safari, Chrome and Opera > 12.1 */
@@ -445,6 +471,9 @@ margin: 8px 4px 0px;
          -o-animation: fadein 0.1s; /* Opera < 12.1 */
             animation: fadein 0.1s;
 }
+
+.label:hover {
+	text-decoration:underline;}
 
 .author {
 	color: #FFFFFF;
@@ -481,6 +510,29 @@ text-decoration:underline;}
     color: #FFF;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
+}
+
+.cell .number span {
+    background: #020202;
+	opacity: 75%;
+	margin: 5px 15px 10px 0px;
+	border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+	font-size: 12px;
+    padding: 5px 10px 5px 10px;
+	display: block;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+    font-weight: 100;
+    font-family: open_sansregular;
+    text-align:left;
+}
+
+
+.cell .numberblock .number span:hover {
+    background: #020202;
+	opacity: 100%;
 }
 
 .number span{
@@ -572,21 +624,21 @@ text-decoration:underline;}
     margin-right: auto;   
     margin-top: 70px;
     padding: 10px;
-    background-color: #FFFFFF;
+    background-color: #020202;
     border: 0px solid #AAAAAA;
 	box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.4);
     font-family: "Arial";
     font-size: 30px;
     max-height: 600px;
 	overflow: auto;  
-	border-top-left-radius: 5px;  border-bottom-left-radius: 5px;  border-top-right-radius: 5px;  border-bottom-right-radius: 5px;
+	border-radius: 10px;
 }
 
 .popuptitle {
 	clear: both;
 	margin-top: 10px;
 	border-bottom: 0px #CCCCCC solid; 
-	color: rgb(66, 66, 66);
+	color: rgb(230, 230, 230);
 	font-weight: 700;
 	font-size: 20px;
 	    font-family: "Oswald";
@@ -678,7 +730,7 @@ text-decoration:underline;}
 
 .sectiontitle {
 	font-size:24px;
-	color: rgb(66, 66, 66);    font-weight: 600;  
+	color: rgb(230,230,230);    font-weight: 600;  
 	font-family:open_sansregular; 
 	font-size: 16px;
 }
@@ -691,14 +743,24 @@ text-decoration:underline;}
 	padding: 5px;
 	width: 150px;
 	border-radius: 10px;	
-	background-color:#EEEEEE;
-    color: rgb(66, 66, 66);    
+	background-color:black;
+    color: rgb(230,230,230);    
     font-weight: 400;    
     font-size: 13px;
     	font-family:open_sansregular; 
 
 }
 
+/* .thumb {
+	object-fit: cover;
+	object-position: center;
+	align-content: center;
+}
+
+img {
+	max-width: 160px; 
+	max-height: 230px;
+} */
 
 /*****************************************/
 /*           BOOK DETAILS                */
@@ -716,7 +778,7 @@ text-decoration:underline;}
 }
 
 #details {
-	font-family: "Arial";	
+	font-family: "Courier New";	
 }
 
 
@@ -744,13 +806,14 @@ text-decoration:underline;}
 	-webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 	/* width: 140%; */
+	border-radius: 10px;
 }
 
 #details_title {	
 	font-size: 22px;
     font-weight: bold;
     text-align: left;
-	color: #444444;
+	color: #e6e6e6;
 	font-family: Oswald;
 	text-transform: uppercase;
 }
@@ -797,10 +860,10 @@ display: -webkit-box;
 	font-size: 14px;
 	text-align:left;
 	overflow-y: auto;
-	color: #444444;
+	color: #e6e6e6;
 	padding: 15px;
 	max-height: 200px;
-font-family: open_sansregular;    
+	font-family: "Courier New";    
 
 	text-align: justify;
 	margin-bottom: 20px;

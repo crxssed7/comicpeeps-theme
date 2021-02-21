@@ -70,13 +70,13 @@ a {
 }
 
 .cell .thumb a img:hover {
-    border: 3px solid #cc7b19;
+    border: 3px solid #e6e6e6;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9), 0px 0px 5px rgba(0, 0, 0, 0.9) inset;
     margin:-3px;
    	-webkit-transition: all 0.1s ease-out;
 	-moz-transition: all 0.1s ease-out;
 	-o-transition: all 0.1s ease-out;
-}
+} 
 
 .hidden {
     visibility: hidden;
@@ -473,7 +473,8 @@ text-decoration:underline;}
 }
 
 .cell .number span {
-    background: #cc7b19;
+    background: #020202;
+	opacity: 75%;
 	margin: 5px 15px 10px 0px;
 	border-top-left-radius: 50px;
 	border-bottom-left-radius: 50px;
@@ -490,7 +491,8 @@ text-decoration:underline;}
 
 
 .cell .numberblock .number span:hover {
-    background: #EC8E1C;
+    background: #020202;
+	opacity: 100%;
 }
 
 
@@ -579,7 +581,7 @@ text-decoration:underline;}
 	margin-top: 10px;
 	margin-bottom: 20px;
 	border-bottom: 0px #CCCCCC solid; 
-	color: rgb(66, 66, 66);
+	color: rgb(230,230,230);
 	font-weight: 700;
 	font-size: 20px;
 	    font-family: "Oswald";
@@ -703,7 +705,7 @@ font-size: 18px;
 
 .sectiontitle {
 	font-size:24px;
-	color: rgb(66, 66, 66);    font-weight: 600;  
+	color: rgb(230,230,230);    font-weight: 600;  
 	font-family:open_sansregular; 
 	font-size: 16px;
 }
@@ -715,8 +717,8 @@ font-size: 18px;
 	padding: 5px;
 	width: 150px;
 	border-radius: 10px;	
-	background-color:#EEEEEE;
-    color: rgb(66, 66, 66);    
+	background-color:black;
+    color: rgb(230,230,230);    
     font-weight: 400;    
     font-size: 13px;
     	font-family:open_sansregular; 
